@@ -76,7 +76,7 @@ prediksi = model.predict(komentar_tfidf)
 print(prediksi)
 ```
 
-⸻
+---
 
 📊 Hasil Evaluasi
 
@@ -89,31 +89,31 @@ F1-Score	0.86
 Model terbaik: Linear SVM
 Fitur terbaik: TF-IDF (ngram range = (1,2))
 
-⸻
+---
 
 🧠 Kesimpulan
 	1.	Algoritma Support Vector Machine efektif untuk klasifikasi sentimen teks berbahasa Indonesia.
 	2.	Kombinasi preprocessing yang tepat dan representasi TF-IDF meningkatkan performa model.
 	3.	Model ini layak dikembangkan untuk analisis opini publik secara real-time.
 
-⸻
+---
 
 💡 Saran Pengembangan
-	•	Integrasi dengan Streamlit Dashboard untuk analisis sentimen interaktif.
-	•	Eksperimen dengan LSTM atau BERT IndoBERT untuk perbandingan hasil.
-	•	Pengumpulan dataset yang lebih besar dan beragam untuk memperkuat generalisasi model.
+- Integrasi dengan Streamlit Dashboard untuk analisis sentimen interaktif.
+- Eksperimen dengan LSTM atau BERT IndoBERT untuk perbandingan hasil.
+- Pengumpulan dataset yang lebih besar dan beragam untuk memperkuat generalisasi model.
 
-⸻
+---
 
 🧾 Referensi
-	•	Ma’rufudin, & Yudhistira, A. (2025). Analisis sentimen petani milenial pada media sosial X menggunakan algoritma Support Vector Machine (SVM). Jurnal Pendidikan dan Teknologi Indonesia, 5(3).
-	•	Setiawan, H., Utami, E., & Sudarmawan, S. (2021). Analisis sentimen Twitter kuliah online pasca Covid-19 menggunakan algoritma Support Vector Machine dan Naïve Bayes. Jurnal Komtika, 5(1), 43–51.
-	•	Wardhani, D., dkk. (2024). Pengantar Data Mining. Mifandi Mandiri Digital.
-	•	Saputra, J., Maryani, L., Rahmaddeni, D. Wulandari, & Wisnu, E. (n.d.). Analisis performa Naive Bayes dan SVM terhadap sentimen teks media sosial dengan Word2Vec dan SMOTE. Jurnal INSTEK, 10(1).
-	•	Seno, B. A., Widodo, & Prasetya Adhi, B. (n.d.). Penerapan algoritma Support Vector Machine untuk mendeteksi emosi dari teks bahasa Indonesia. PINTER: Jurnal Pendidikan Teknik Informatika dan Komputer, 8(1).
-	•	Supian, A., Revaldo, B. T., Marhadi, N., Rahmaddeni, & Efrizoni, L. (n.d.). Penerapan SVM dan Word2Vec untuk analisis sentimen ulasan pengguna aplikasi DANA. Jurnal Ilmiah Komputasi, 23(3).
+- Ma’rufudin, & Yudhistira, A. (2025). Analisis sentimen petani milenial pada media sosial X menggunakan algoritma Support Vector Machine (SVM). Jurnal Pendidikan dan Teknologi Indonesia, 5(3).
+- Setiawan, H., Utami, E., & Sudarmawan, S. (2021). Analisis sentimen Twitter kuliah online pasca Covid-19 menggunakan algoritma Support Vector Machine dan Naïve Bayes. Jurnal Komtika, 5(1), 43–51.
+- Wardhani, D., dkk. (2024). Pengantar Data Mining. Mifandi Mandiri Digital.
+- Saputra, J., Maryani, L., Rahmaddeni, D. Wulandari, & Wisnu, E. (n.d.). Analisis performa Naive Bayes dan SVM terhadap sentimen teks media sosial dengan Word2Vec dan SMOTE. Jurnal INSTEK, 10(1).
+- Seno, B. A., Widodo, & Prasetya Adhi, B. (n.d.). Penerapan algoritma Support Vector Machine untuk mendeteksi emosi dari teks bahasa Indonesia. PINTER: Jurnal Pendidikan Teknik Informatika dan Komputer, 8(1).
+- Supian, A., Revaldo, B. T., Marhadi, N., Rahmaddeni, & Efrizoni, L. (n.d.). Penerapan SVM dan Word2Vec untuk analisis sentimen ulasan pengguna aplikasi DANA. Jurnal Ilmiah Komputasi, 23(3).
 
-⸻
+---
 
 Pengembang
 Nama: Muhamad Hibban Ramadhan
@@ -122,7 +122,7 @@ Program Studi: Teknik Informatika – Konsentrasi Kecerdasan Buatan
 Universitas: Universitas Lampung
 Tahun: 2025
 
-⸻
+---
 
 🪪 Lisensi
 
