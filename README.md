@@ -96,15 +96,8 @@ print(prediksi)
 ---
 
 Pengembang
-Nama: Muhamad Hibban Ramadhan
-NIM: 2315061094
-Program Studi: Teknik Informatika – Konsentrasi Kecerdasan Buatan
-Universitas: Universitas Lampung
-Tahun: 2025
-
----
-
-🪪 Lisensi
-
-Proyek ini dilisensikan di bawah MIT License.
-Silakan gunakan, ubah, dan kembangkan kembali untuk kepentingan pembelajaran atau riset akademik.
+- Nama: Muhamad Hibban Ramadhan
+- NIM: 2315061094
+- Program Studi: Teknik Informatika – Konsentrasi Kecerdasan Buatan
+- Universitas: Universitas Lampung
+- Tahun: 2025
