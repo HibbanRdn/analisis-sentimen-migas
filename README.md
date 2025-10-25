@@ -32,19 +32,19 @@ Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu me
 
 ---
 
-## 🗂️ Struktur Folder
-📦 Analisis-Sentimen-SVM
-├── 📁 dataset/
-│   ├── komentar_youtube.csv
-│   └── komentar_clean.csv
-├── 📁 models/
-│   ├── svm_sentimen.joblib
-│   └── tfidf_vectorizer.joblib
-├── 📁 notebook/
-│   └── analisis_sentimen_svm.ipynb
-├── app.py                     # Aplikasi prediksi komentar baru
-├── requirements.txt           # Daftar dependensi Python
-├── laporan.docx               # Laporan penelitian lengkap
+## 📂 Struktur Folder
+📦 Analisis-Sentimen-SVM  
+├── 📁 dataset/  
+│   ├── komentar_youtube.csv  
+│   └── komentar_clean.csv  
+├── 📁 models/  
+│   ├── svm_sentimen.joblib  
+│   └── tfidf_vectorizer.joblib  
+├── 📁 notebook/  
+│   └── analisis_sentimen_svm.ipynb  
+├── app.py                     # Aplikasi prediksi komentar baru  
+├── requirements.txt           # Daftar dependensi Python  
+├── laporan.docx               # Laporan penelitian lengkap  
 └── README.md                  # Dokumentasi proyek
 
 ---
