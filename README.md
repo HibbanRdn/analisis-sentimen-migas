@@ -78,26 +78,6 @@ print(prediksi)
 
 ---
 
-📊 Hasil Evaluasi
-
-Metrik	Nilai
-Akurasi	0.87
-Presisi	0.86
-Recall	0.85
-F1-Score	0.86
-
-Model terbaik: Linear SVM
-Fitur terbaik: TF-IDF (ngram range = (1,2))
-
----
-
-🧠 Kesimpulan
-	1.	Algoritma Support Vector Machine efektif untuk klasifikasi sentimen teks berbahasa Indonesia.
-	2.	Kombinasi preprocessing yang tepat dan representasi TF-IDF meningkatkan performa model.
-	3.	Model ini layak dikembangkan untuk analisis opini publik secara real-time.
-
----
-
 💡 Saran Pengembangan
 - Integrasi dengan Streamlit Dashboard untuk analisis sentimen interaktif.
 - Eksperimen dengan LSTM atau BERT IndoBERT untuk perbandingan hasil.
