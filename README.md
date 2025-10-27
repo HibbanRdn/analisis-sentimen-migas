@@ -32,7 +32,7 @@ Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu me
 
 ---
 
-## Contoh Penggunaan
+## ⚙️ Contoh Penggunaan dan Output
 <img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="900">
 
 ---
