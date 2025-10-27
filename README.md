@@ -75,6 +75,11 @@ print(prediksi)
 
 ---
 
+## Contoh Penggunaan
+<img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="450">
+
+---
+
 💡 Saran Pengembangan
 - Integrasi dengan Streamlit Dashboard untuk analisis sentimen interaktif.
 - Eksperimen dengan LSTM atau BERT IndoBERT untuk perbandingan hasil.
