@@ -12,7 +12,7 @@
 ## 📋 Deskripsi Proyek
 Proyek ini merupakan implementasi **analisis sentimen komentar YouTube** menggunakan algoritma **Support Vector Machine (SVM)**.  
 Tujuannya adalah untuk **mengklasifikasikan opini publik** menjadi tiga kategori sentimen:  
-➡️ **Positif**, ⚪ **Netral**, dan ❌ **Negatif**.
+✅ **Positif**, ⚪ **Netral**, dan ❌ **Negatif**.
 
 Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu melalui tahapan:
 - Pembersihan teks (preprocessing)
