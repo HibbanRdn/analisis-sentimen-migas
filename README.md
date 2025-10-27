@@ -76,7 +76,7 @@ print(prediksi)
 ---
 
 ## Contoh Penggunaan
-<img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="450">
+<img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="900">
 
 ---
 
