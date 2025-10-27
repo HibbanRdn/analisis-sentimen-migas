@@ -42,9 +42,6 @@ Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu me
 │   └── tfidf_vectorizer.joblib  
 ├── 📁 notebook/  
 │   └── analisis_sentimen_svm.ipynb  
-├── app.py                     # Aplikasi prediksi komentar baru  
-├── requirements.txt           # Daftar dependensi Python  
-├── laporan.docx               # Laporan penelitian lengkap  
 └── README.md                  # Dokumentasi proyek
 
 ---
