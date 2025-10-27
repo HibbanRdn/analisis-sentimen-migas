@@ -35,13 +35,13 @@ Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu me
 ## 📂 Struktur Folder
 📦 Analisis-Sentimen-SVM  
 ├── 📁 dataset/  
-│   ├── komentar_youtube.csv  
-│   └── komentar_clean.csv  
+│    ├── komentar_youtube.csv  
+│    └── komentar_clean.csv  
 ├── 📁 models/  
-│   ├── svm_sentimen.joblib  
-│   └── tfidf_vectorizer.joblib  
+│    ├── svm_sentimen.joblib  
+│    └── tfidf_vectorizer.joblib  
 ├── 📁 notebook/  
-│   └── analisis_sentimen_svm.ipynb  
+│    └── analisis_sentimen_svm.ipynb  
 └── README.md                  # Dokumentasi proyek
 
 ---
