@@ -32,6 +32,11 @@ Dataset dikumpulkan secara otomatis menggunakan **YouTube Data API v3**, lalu me
 
 ---
 
+## Contoh Penggunaan
+<img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="900">
+
+---
+
 ## 📂 Struktur Folder
 📦 Analisis-Sentimen-SVM  
 ├── 📁 dataset/  
@@ -72,11 +77,6 @@ komentar_tfidf = vectorizer.transform(komentar)
 prediksi = model.predict(komentar_tfidf)
 print(prediksi)
 ```
-
----
-
-## Contoh Penggunaan
-<img src="notebook/Screenshot 2025-10-27 at 19.48.05.png" alt="Contoh Penggunaan" width="900">
 
 ---
 
