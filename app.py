@@ -34,7 +34,7 @@ def clean_text(text):
 # === JUDUL APLIKASI =======================================
 # ==========================================================
 st.markdown(
-    "<h1 style='text-align:left; margin-bottom:0;'>🛢️ Analisis Sentimen: Kasus Migas Riza Chalid</h1>",
+    "<h1 style='text-align:left; margin-bottom:0;'>Analisis Sentimen: Kasus Migas Riza Chalid</h1>",
     unsafe_allow_html=True
 )
 st.write("""
