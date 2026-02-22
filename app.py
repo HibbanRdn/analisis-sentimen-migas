@@ -12,8 +12,7 @@ import matplotlib.pyplot as plt
 # === KONFIGURASI HALAMAN ==================================
 # ==========================================================
 st.set_page_config(
-    page_title="Analisis Sentimen YouTube",
-    page_icon="🎥",
+    page_title="Sentimen Kasus Migas Riza Chalid",
     layout="wide"
 )
 
@@ -35,11 +34,11 @@ def clean_text(text):
 # === JUDUL APLIKASI =======================================
 # ==========================================================
 st.markdown(
-    "<h1 style='text-align:left; margin-bottom:0;'>🎥 Analisis Sentimen Komentar YouTube</h1>",
+    "<h1 style='text-align:left; margin-bottom:0;'>🛢️ Analisis Sentimen: Kasus Migas Riza Chalid</h1>",
     unsafe_allow_html=True
 )
 st.write("""
-Aplikasi ini memprediksi sentimen (opini) dari komentar YouTube secara otomatis.  
+Aplikasi ini memprediksi sentimen opini publik dari komentar YouTube secara otomatis terkait **Kasus Mafia Minyak dan Gas (Migas) di Indonesia dengan tersangka Muhammad Riza Chalid**.  
 Model dilatih menggunakan algoritma **Support Vector Machine (SVM)** dipadukan dengan ekstraksi fitur teks (TF-IDF).
 """)
 
@@ -91,9 +90,13 @@ tab1, tab2, tab3 = st.tabs(["🧾 Input Langsung", "📂 Upload CSV Komentar", "
 # ==========================================================
 with tab1:
     st.header("💬 Analisis Komentar Tunggal")
-    st.markdown("Masukkan teks komentar YouTube untuk mengetahui apakah sentimennya Positif, Negatif, atau Netral.")
+    st.markdown("Masukkan teks opini/komentar YouTube terkait kasus Riza Chalid untuk mengetahui apakah sentimennya Positif, Negatif, atau Netral.")
 
-    user_input = st.text_area("Ketik komentar di sini:", height=150, placeholder="Contoh: Videonya sangat bermanfaat dan penjelasannya mudah dipahami bang!")
+    user_input = st.text_area(
+        "Ketik komentar di sini:", 
+        height=150, 
+        placeholder="Contoh: Usut tuntas kasus mafia migas ini, hukum seberat-beratnya agar ada efek jera!"
+    )
 
     if st.button("🔍 Analisis Sentimen", use_container_width=True):
         if user_input.strip() == "":
@@ -133,7 +136,7 @@ with tab1:
 # ==========================================================
 with tab2:
     st.header("📂 Analisis Sentimen Massal (CSV)")
-    st.markdown("Unggah file CSV hasil *scraping* komentar YouTube. Aplikasi akan memprediksi seluruh komentar sekaligus.")
+    st.markdown("Unggah file CSV hasil *scraping* komentar YouTube terkait kasus Riza Chalid. Aplikasi akan memprediksi seluruh komentar sekaligus.")
 
     uploaded_file = st.file_uploader("Pilih file CSV", type=["csv"])
 
@@ -169,7 +172,7 @@ with tab2:
                     st.dataframe(df[tampil_cols])
 
                     # --- Statistik Distribusi ---
-                    st.markdown("### 📊 Distribusi Sentimen Komentar")
+                    st.markdown("### 📊 Distribusi Sentimen Opini Publik")
                     
                     col_chart, col_data = st.columns([2, 1])
                     
@@ -188,7 +191,7 @@ with tab2:
                         ax.bar(summary["Sentimen"].astype(str), summary["Jumlah"], color=colors)
                         ax.set_xlabel("Kategori Sentimen")
                         ax.set_ylabel("Jumlah Komentar")
-                        ax.set_title("Grafik Distribusi Sentimen", pad=10)
+                        ax.set_title("Grafik Distribusi Sentimen Publik", pad=10)
                         st.pyplot(fig, use_container_width=False)
 
                     # --- Unduh hasil ---
@@ -197,7 +200,7 @@ with tab2:
                     st.download_button(
                         label="⬇️ Unduh Hasil Prediksi (CSV)",
                         data=csv_out,
-                        file_name="hasil_analisis_sentimen_youtube.csv",
+                        file_name="hasil_analisis_sentimen_riza_chalid.csv",
                         mime="text/csv"
                     )
 
@@ -209,21 +212,21 @@ with tab2:
 # ==========================================================
 with tab3:
     st.write("""
-    Aplikasi ini dikembangkan untuk mempermudah analisis sentimen masyarakat terhadap konten YouTube 
-    menggunakan pendekatan *Natural Language Processing* (NLP) dan *Machine Learning*.
+    Aplikasi ini dikembangkan untuk mempermudah pemetaan opini masyarakat mengenai **Kasus Mafia Minyak dan Gas (Migas) di Indonesia dengan tersangka Muhammad Riza Chalid**.
+    Analisis sentimen dilakukan terhadap dataset komentar audiens dari *platform* YouTube menggunakan pendekatan *Natural Language Processing* (NLP) dan *Machine Learning*.
     """)
 
-    st.subheader("🧠 Framework & Pipeline NLP")
+    st.subheader("Framework & Pipeline NLP")
     st.markdown("""
     Sistem ini berjalan mengikuti *pipeline* pemrosesan bahasa alami standar:
-    **1. Data Acquisition** — Pengumpulan dataset komentar YouTube (via *scraping* / API).  
-    **2. Text Pre-Processing** — Pembersihan teks (menghapus emoji, link, *case folding*).  
+    **1. Data Acquisition** — Pengumpulan dataset komentar YouTube pada video berita terkait kasus Riza Chalid.  
+    **2. Text Pre-Processing** — Pembersihan teks dari *noise* (menghapus emoji, link web, dan *case folding*).  
     **3. Feature Engineering** — Mengubah teks menjadi representasi vektor numerik menggunakan `TF-IDF Vectorizer`.  
-    **4. Modeling** — Klasifikasi menggunakan algoritma `Support Vector Machine (SVM)`.  
-    **5. Deployment** — Implementasi interaktif berbasis Streamlit web app.
+    **4. Modeling** — Klasifikasi dikotomi/multikelas menggunakan algoritma `Support Vector Machine (SVM)`.  
+    **5. Deployment** — Implementasi model ke dalam bentuk *web application* interaktif berbasis Streamlit.
     """)
 
-    st.subheader("👨‍💻 Pengembang")
+    st.subheader("Pengembang")
     st.markdown("""
     - **Nama:** M. Hibban Ramadhan  
     - **Institusi:** Universitas Lampung  
@@ -240,7 +243,7 @@ year = datetime.datetime.now().year
 st.markdown(
     f"""
     <div style='text-align: center; color: gray; font-size: 0.9rem; margin-top: 10px;'>
-        © {year} <b>M. Hibban Ramadhan</b> — Proyek <i>Analisis Sentimen NLP</i><br>
+        © {year} <b>M. Hibban Ramadhan</b> — Proyek <i>Analisis Sentimen Kasus Migas Riza Chalid</i><br>
         Dibangun menggunakan <a href='https://streamlit.io' target='_blank' style='color: #4b9cd3; text-decoration: none;'>Streamlit</a>
     </div>
     """,
